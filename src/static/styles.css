@@ -93,14 +93,39 @@ section h3 {
 }
 
 .participants-list li {
-  padding: 5px 0 5px 20px;
+  padding: 5px 0;
   position: relative;
   color: #555;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
 }
 
 .participants-list li:before {
-  content: "•";
+  content: "";
   position: absolute;
   left: 0;
   color: #0066cc;
